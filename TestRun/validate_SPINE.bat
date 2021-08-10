@@ -1,0 +1,1 @@
+java -jar ..\..\..\TKW.jar -spinevalidate ..\tkwclient.properties

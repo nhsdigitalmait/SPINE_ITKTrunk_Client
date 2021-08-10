@@ -1,0 +1,52 @@
+# Test value for ITK trunk (NB this is a *tab* separated file!)
+#
+# QUPA_IN000005UK01 Simple Trace Query MiM 6
+# QUPA_IN000006UK02 Advanced Trace MiM 6
+# QUPA_IN000008UK02 Retrieval Query MiM 6
+# QUPA_IN000008UK05 Retrieval Query MiM 7
+#
+urn:nhs:names:services:itk:COPC_IN000001GB01	https://msg.int.spine2.ncrs.nhs.uk/reliablemessaging/intermediary
+urn:oasis:names:tc:ebxml-msg:service:Acknowledgment	https://msg.int.spine2.ncrs.nhs.uk/reliablemessaging/intermediary
+
+# 4001 direct to spine MTH
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK05	https://localhost:4001/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK02	https://localhost:4001/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000006UK02	https://localhost:4001/reliablemessaging/queryrequest
+#urn:nhs:names:services:pdsquery:QUPA_IN000005UK01	https://localhost:4001/syncservice-pds/pds
+
+
+# 5000 via interceptor
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK05	https://localhost:5000/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK02	https://localhost:5000/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000006UK02	https://localhost:5000/reliablemessaging/queryrequest
+#urn:nhs:names:services:pdsquery:QUPA_IN000005UK01	https://localhost:5000/syncservice-pds/pds
+
+# 4848 direct to spine MTH
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK05	https://localhost:4848/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK02	https://localhost:4848/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000006UK02	https://localhost:4848/reliablemessaging/queryrequest
+#urn:nhs:names:services:pdsquery:QUPA_IN000005UK01	https://localhost:4848/syncservice-pds/pds
+
+# 4430 direct to spine MTH
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK05	https://localhost:4430/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK02	https://localhost:4430/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000006UK02	https://localhost:4430/reliablemessaging/queryrequest
+#urn:nhs:names:services:pdsquery:QUPA_IN000005UK01	https://localhost:4430/syncservice-pds/pds
+
+# 443 forwarded via 443 to spine MTH (async wont work on lo due to contention for 443)
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK05	https://localhost:443/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK02	https://localhost:443/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000006UK02	https://localhost:443/reliablemessaging/queryrequest
+#urn:nhs:names:services:pdsquery:QUPA_IN000005UK01	https://localhost:443/syncservice-pds/pds
+
+# 4430 to spine MTH on W7 host
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK05	https://192.168.1.113:4430/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000008UK02	https://192.168.1.113:4430/syncservice-pds/pds
+#urn:nhs:names:services:pdsquery:QUPA_IN000006UK02	https://192.168.1.113:4430/reliablemessaging/queryrequest
+#urn:nhs:names:services:pdsquery:QUPA_IN000005UK01	https://192.168.1.113:4430/syncservice-pds/pds
+
+# 4433 direct to spine MTH
+urn:nhs:names:services:pdsquery:QUPA_IN000008UK05	https://localhost:4433/syncservice-pds/pds
+urn:nhs:names:services:pdsquery:QUPA_IN000008UK02	https://localhost:4433/syncservice-pds/pds
+urn:nhs:names:services:pdsquery:QUPA_IN000006UK02	https://localhost:4433/reliablemessaging/queryrequest
+urn:nhs:names:services:pdsquery:QUPA_IN000005UK01	https://localhost:4433/syncservice-pds/pds

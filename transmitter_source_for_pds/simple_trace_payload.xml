@@ -1,0 +1,19 @@
+<query>
+    <person.administrativeGenderCode>
+        <semanticsText>Person.administrativeGenderCode</semanticsText>
+        <value code="2"/>
+    </person.administrativeGenderCode>
+    <person.birthTime>
+        <semanticsText>Person.birthTime</semanticsText>
+        <value value="19661111"/>
+    </person.birthTime>
+    <person.name>
+        <semanticsText>Person.name</semanticsText>
+        <value use="L">
+            <given>SADIA</given>
+            <given>DANA</given>
+            <family>PURVES</family>
+        </value>
+    </person.name>
+</query>
+ 

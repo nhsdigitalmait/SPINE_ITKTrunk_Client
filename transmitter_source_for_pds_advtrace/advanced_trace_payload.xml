@@ -1,0 +1,27 @@
+<query>
+    <historicDataIndicator>
+        <semanticsText>HistoricDataIndicator</semanticsText>
+        <value code="0" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.36" />
+    </historicDataIndicator>
+    <person.administrativeGenderCode>
+        <semanticsText>Person.administrativeGenderCode</semanticsText>
+        <value code="1" />
+    </person.administrativeGenderCode>
+    <person.birthTime>
+        <semanticsText>Person.birthTime</semanticsText>
+        <value>
+            <center value="20121029" />
+        </value>
+    </person.birthTime>
+    <person.name>
+        <semanticsText>Person.name</semanticsText>
+        <value use="L">
+            <family>O'Six-O'Clock</family>
+            <given>Wing Mann</given>
+        </value>
+    </person.name>
+    <searchParameter>
+        <semanticsText>SearchParameter</semanticsText>
+        <value code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.39" />
+    </searchParameter>
+</query>
