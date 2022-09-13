@@ -4,22 +4,53 @@
 # sends a Spine PDS simple trace or advanced trace request
 # full log appears in transmitter_sent_messages
 # sync responses in simulator_saved_messages/Sync
-# async responses in simulator_saved_messages/EbXml
+# async responses in simulator_saved_messages/EbXml and stdout
 #
-case $1 in  
-	A)
-	PROPS=tkwClient_mth_pds_advtrace.properties
-	;;
 
-	T)
-	# simple trace
-	PROPS=tkwClient_mth_pds.properties
-	;;
+# TKWX ?
+X=-x
 
+# usage ./transmit.sh (A|T|R) [(mth|opentest) [N]] 
+
+TARGET=mth
+#TARGET=opentest
+
+case $# in  
+	1)
+		message=$1
+	;;
+	2)
+		message=$1
+		TARGET=$2
+	;;
+	3)
+		message=$1
+		TARGET=$2
+		X=
+	;;
 	*)
-	# ITK trunk
-	PROPS=tkwClient.properties
+		echo  "usage: $0"' (A|T|R) [(mth|opentest) [N]]'
+		exit 1
 	;;
 esac
 
-java -jar ../../TKW.jar -transmit $PROPS
+case $message in  
+	A)
+	# advanced trace async response to stdout urn:nhs:names:services:pdsquery/QUPA_IN000006UK02
+	PROPS=tkwClient"$X"_"$TARGET"_pds_advtrace.properties
+	;;
+
+	T)
+	# simple trace urn:nhs:names:services:pdsquery/QUPA_IN000005UK01
+	PROPS=tkwClient"$X"_"$TARGET"_pds.properties
+	;;
+
+	R)
+	# ITK trunk (deprecated)
+	PROPS=tkwClient"$X".properties
+	;;
+esac
+
+#OPTIONS=-Djavax.net.debug=all
+
+java $OPTIONS -jar ../../TKW"$X".jar -transmit $PROPS
